@@ -1,4 +1,5 @@
 import random
+import sys
 
 # This Script will take two numbers and apply Gauss's equasion to them.
 
@@ -81,10 +82,6 @@ num_input("Enter the first number in the range or type 'random' for a random \n 
 num_input("Enter the second number in the range or type 'random' for a random \n integer between 1 and 1,000,000:  ")
 
 print(f" The two numbers are: {gauss_list}")
-# method2 = Methods(gauss_list)
-# method1 = Methods(gauss_list)
-# method2.stand_m()
-# method2.gauss_m()
 method1 = int(gauss_m(gauss_list))
 method2 = int(stand_m(gauss_list))
 
@@ -96,3 +93,26 @@ if method1 == method2:
     print("The two answers are equal, Gauss's method is still valid!!!!")
 else:
     print("Congratulations, you disproved Gauss, you managed to break \n the fabric of space and time and opened an interdimentional portal! \n Bow to your new Alien Overloards!!")
+
+
+try_again = input("Would you like to try two more numbers?")
+if try_again.upper() == "YES" or try_again.upper() == "Y":
+    gauss_list = []
+    num_input("Enter the first number in the range or type 'random' for a random \n integer between 1 and 1,000,000:  ")
+    num_input("Enter the second number in the range or type 'random' for a random \n integer between 1 and 1,000,000:  ")
+
+    print(f" The two numbers are: {gauss_list}")
+    method1 = int(gauss_m(gauss_list))
+    method2 = int(stand_m(gauss_list))
+
+    print("==================================================")
+    print(f"The answer using the Gauss method is: {method2}")
+    print(f"the answer using the looping method is: {method1}")
+
+    if method1 == method2:
+        print("The two answers are equal, Gauss's method is still valid!!!!")
+    else:
+        print("Congratulations, you disproved Gauss, you managed to break \n the fabric of space and time and opened an interdimentional portal! \n Bow to your new Alien Overloards!!")
+
+else:
+    sys.exit()
