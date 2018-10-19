@@ -15,11 +15,11 @@ def num_input(input_text):
 
         else:
             print("Invalid Input, Please enter a number between 0 and 1M")
-            print("Or Type 'Random' for a random number")
+            print("Or Type 'Random' for a random number\n")
             num_input(input_text)
     except:
         print("Invalid Input, Please enter a number between 0 and 1M")
-        print("Or Type 'Random' for a random number")
+        print("Or Type 'Random' for a random number\n")
         num_input(input_text)
 
 
@@ -59,7 +59,7 @@ print(" Who was known for making significat contributions to Physics")
 print(" astronomy, and algebra.\n")
 print("However, He was also known for skrewing around in school and ")
 print("Upsetting his teachers. One day, his teacher decided to disipline ")
-print("the Young Gauss by making him add up every intiger between 1-100.")
+print("the Young Gauss by making him add up every intiger between 1-100.\n")
 pause1 = input("(press enter to continue)")
 print("But his teacher soon realized that he was dealing with a protagy")
 print("when the young Gauss finished the assinment within seconds to the ")
@@ -77,10 +77,10 @@ print("python to add all the intigers the conventional way.\n")
 pause4 = input("(press enter to continue)")
 
 #  requests two numbers from user and puts them in the list
-num_input("Enter the first number in the range or type 'random' for a random \n intiger betwween 1 and 1,000,000:  ")
-num_input("Enter the second number in the range or type 'random' for a random \n intiger betwween 1 and 1,000,000:  ")
+num_input("Enter the first number in the range or type 'random' for a random \n integer between 1 and 1,000,000:  ")
+num_input("Enter the second number in the range or type 'random' for a random \n integer between 1 and 1,000,000:  ")
 
-print(gauss_list)
+print(f" The two numbers are: {gauss_list}")
 # method2 = Methods(gauss_list)
 # method1 = Methods(gauss_list)
 # method2.stand_m()
